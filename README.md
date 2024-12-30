@@ -1,4 +1,4 @@
-# polimer (POC framework)
+# polimer
 
 **polimer** is an automated callstack synthesis framework (based on annotations)
 
@@ -18,7 +18,9 @@ pip install polimer
 ```
 
 2. Annotate your methods with payload ids:
+
 <h5 a><strong><code>prices.py</code></strong></h5>
+
 ```python
 import random
 
@@ -31,6 +33,7 @@ def calc_avg_price(p: 'price_list'):
 
 3. Import your entrypoints via **polimer**
 <h5 a><strong><code>demo.py</code></strong></h5>
+
 ```python
 from prices import *
 from polimer import prices
